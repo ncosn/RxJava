@@ -49,6 +49,7 @@ public class ToolOperatorDemo {
         com.sgcc.yzd.rxjava.Observable.create(new com.sgcc.yzd.rxjava.ObservableOnSubscribe() {
             @Override
             public void subscribe(Emitter emitter) {
+                System.out.println("ObservableOnSubscribe:subscribe(emitter)");
                 emitter.onNext("123");
                 emitter.onNext("456");
                 emitter.onComplete();
@@ -71,22 +72,22 @@ public class ToolOperatorDemo {
                 .subscribe(new com.sgcc.yzd.rxjava.Observer() {
             @Override
             public void onSubscribe() {
-                System.out.println("onSubscribe...");
+                System.out.println("observer:onSubscribe...");
             }
 
             @Override
             public void onNext(Object o) {
-                System.out.println("onNext..." + o);
+                System.out.println("observer:onNext..." + o);
             }
 
             @Override
             public void onComplete() {
-                System.out.println("onComplete...");
+                System.out.println("observer:onComplete...");
             }
 
             @Override
             public void onError(Throwable throwable) {
-                System.out.println("onError...");
+                System.out.println("observer:onError...");
             }
         });
     }

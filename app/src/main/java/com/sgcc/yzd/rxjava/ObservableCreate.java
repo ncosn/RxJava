@@ -10,7 +10,7 @@ public class ObservableCreate<T> extends Observable<T> {
 
     @Override
     public void subscribeActual(Observer observer) {
-
+        System.out.println("ObservableCreate:subscribeActual");
         observer.onSubscribe();
         CreateEmitter emitter = new CreateEmitter(observer);
         System.out.println("ObservableCreate:subscribeActual():CreateEmitter()");
