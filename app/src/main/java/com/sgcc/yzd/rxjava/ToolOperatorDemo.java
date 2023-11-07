@@ -24,7 +24,7 @@ public class ToolOperatorDemo {
     public static void main(String[] args) {
         System.out.println("================================");
         ToolOperatorDemo demo = new ToolOperatorDemo();
-        demo.test4();
+        demo.test3();
         System.out.println("================================");
     }
 

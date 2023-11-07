@@ -91,6 +91,22 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                 });
+//        Observable.create(new ObservableOnSubscribe<Object>() {
+//            @Override
+//            public void subscribe(ObservableEmitter<Object> e) throws Exception {
+//
+//            }
+//        }).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(new Consumer<Object>() {
+//            @Override
+//            public void accept(Object o) throws Exception {
+//
+//            }
+//        }, new Consumer<Throwable>() {
+//            @Override
+//            public void accept(Throwable throwable) throws Exception {
+//
+//            }
+//        });
     }
 
 
